@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>weather app</title>
+
+    <!-- Fontawesome Icons v6.2.0 -->
+    <script
+      src="https://kit.fontawesome.com/7c8801c017.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Roboto Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="lang-control">
+      <input type="radio" name="lang" value="ar" id="AR" checked />
+      <label for="AR" class="lang-control__1"> <p>AR</p></label>
+
+      <input type="radio" name="lang" value="en" id="EN" />
+      <label for="EN" class="lang-control__2"> <p>EN</p></label>
+    </div>
+
+    <div class="container">
+      <div class="search-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="Enter Your Location" />
+        <button class="fa-solid fa-magnifying-glass"></button>
+      </div>
+
+      <div class="not-found">
+        <img src="images/404.png" alt="..." />
+        <p id="invalid_location">Oops! Invalid Location :/</p>
+      </div>
+
+      <div class="weather-box">
+        <img src="" alt="..." />
+        <p class="temperature"></p>
+        <p class="description"></p>
+      </div>
+
+      <div class="weather-details">
+        <div class="humidity">
+          <i class="fa-solid fa-water"></i>
+          <div class="text">
+            <span></span>
+            <p id="humidity"></p>
+          </div>
+        </div>
+        <div class="wind">
+          <i class="fa-solid fa-wind"></i>
+          <div class="text">
+            <span></span>
+            <p id="wind_speed"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS File -->
+    <script src="./js/script.js" defer type="text/javascript"></script>
+  </body>
+</html>
